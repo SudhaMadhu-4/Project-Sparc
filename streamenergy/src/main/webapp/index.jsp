@@ -1,5 +1,5 @@
 <html>
 <body>
-<h2>Project Sparc by amreen</h2>
+<h2>Project Sparc</h2>
 </body>
 </html>
