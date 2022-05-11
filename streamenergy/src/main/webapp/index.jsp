@@ -109,7 +109,7 @@ If this is correct, select switch or new service. If not, please enter your zip 
   <label for="bussiness">Bussiness</label><br><br>
   <form action="">
  
-  <select name="cars" id="cars" style="width: 15%;">
+  <select name="states" id="states" style="width: 15%;">
     <option value="Texas">Texas</option>
     <option value="Georgia">Georgia</option>
     <option value="Delaware">Delaware</option>
