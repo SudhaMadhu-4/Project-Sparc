@@ -82,10 +82,10 @@ table, th, td {
      <ul>
      
 				<div>
-	   				<a href="/en/services/home">For Home</a>&nbsp;&nbsp;&nbsp;
-	   				<a href="/en/services/business">For Business</a>&nbsp;&nbsp;&nbsp;
-	   				<a href="/en/support/energy">Support</a>&nbsp;&nbsp;&nbsp;
-	   				<a href="/en/auth/login" title="hide-when-logged-in">Log In</a>
+	   				<a href="">For Home</a>&nbsp;&nbsp;&nbsp;
+	   				<a href="">For Business</a>&nbsp;&nbsp;&nbsp;
+	   				<a href="">Support</a>&nbsp;&nbsp;&nbsp;
+	   				<a href="" title="hide-when-logged-in">Log In</a>
 	   				
 	  			</div>
 	
