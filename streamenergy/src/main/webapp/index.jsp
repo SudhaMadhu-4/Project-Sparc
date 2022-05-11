@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Stream Energy</title>
 
 <style>
 table, th, td {
@@ -106,7 +106,7 @@ If this is correct, select switch or new service. If not, please enter your zip 
   <input type="radio" id="residential" name="res" value="Residential">
   <label for="residential">Residential</label>
 <input type="radio" id="bussiness" name="res" value="BcontextPathusiness">
-  <label for="bussiness">Bussiness</label><br><br>
+  <label for="bussiness">Business</label><br><br>
   <form action="">
  
   <select name="states" id="states" style="width: 15%;">
