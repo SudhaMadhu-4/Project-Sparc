@@ -176,11 +176,12 @@ table, th, td {
   <p>Looks like you're in, 
 If this is correct, select switch or new service. If not, please enter your zip code or address to continue.
   </p>
+  <form action="/streamenergy/viewplans">
   <input type="radio" id="residential" name="res" value="Residential">
   <label for="residential">Residential</label>
 <input type="radio" id="bussiness" name="res" value="BcontextPathusiness">
   <label for="bussiness">Bussiness</label><br><br>
-  <form action="">
+  
  
   <select name="states" id="states" style="width: 15%;">
     <option value="Texas">Texas</option>
@@ -195,7 +196,7 @@ If this is correct, select switch or new service. If not, please enter your zip 
   <label for="Switch energy providers">Switch energy providers</label>
 <input type="radio" id="Set up new service" name="choice" value="Set up new service">
   <label for="Set up new service">Set up new service</label><br><br>
- <input type="submit" value="View Rates">
+ <input type="submit" value="View Rates" >
   
 </form>
 
