@@ -53,7 +53,67 @@ table, th, td {
   height:4%;
 
 }
+.references {
+  overflow: hidden;
+  background-color: #333;
+}
 
+.references a {
+  float: right;
+  font-size: 16px;
+  color: white;
+  text-align: right;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+   width: 100px;
+}
+
+.references a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 170px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  width: 250px;
+  
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  width: 250px;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 </style>
 </head>
 <body>
@@ -81,12 +141,25 @@ table, th, td {
 <nav class="mobile-nav" mobile-nav=""> 
      <ul>
      
-				<div>
+				<div class="references">
+			
 	   				<a href="">For Home</a>&nbsp;&nbsp;&nbsp;
 	   				<a href="">For Business</a>&nbsp;&nbsp;&nbsp;
 	   				<a href="">Support</a>&nbsp;&nbsp;&nbsp;
-	   				<a href="" title="hide-when-logged-in">Log In</a>
-	   				
+	   		
+	   				<div class="dropdown" align="center">
+                     <button class="dropbtn" >Log In 
+                     <i class="fa fa-caret-down"></i>
+                     </button>
+                    <div class="dropdown-content" align="center" style="width:250px ">
+                     <p>My Account</p>
+                    <input type="text" name="username" placeholder="Username" size="20"><br><br>
+                     <input type="password" name="password" placeholder="Password" size="20"><br><br>
+                    <input type="submit" value="Login"><br><br>
+                  <p> <a href="">Forgot  Username or Password</a><br></p>
+                   <p> <a href="">New User?  Create an Account</a></p>
+                   </div>
+                   </div> 
 	  			</div>
 	
 	  
@@ -103,11 +176,12 @@ table, th, td {
   <p>Looks like you're in, 
 If this is correct, select switch or new service. If not, please enter your zip code or address to continue.
   </p>
+  <form action="/streamenergy/viewplans">
   <input type="radio" id="residential" name="res" value="Residential">
   <label for="residential">Residential</label>
 <input type="radio" id="bussiness" name="res" value="BcontextPathusiness">
-  <label for="bussiness">Business</label><br><br>
-  <form action="">
+  <label for="bussiness">Bussiness</label><br><br>
+  
  
   <select name="states" id="states" style="width: 15%;">
     <option value="Texas">Texas</option>
@@ -122,7 +196,7 @@ If this is correct, select switch or new service. If not, please enter your zip 
   <label for="Switch energy providers">Switch energy providers</label>
 <input type="radio" id="Set up new service" name="choice" value="Set up new service">
   <label for="Set up new service">Set up new service</label><br><br>
- <input type="submit" value="View Rates">
+ <input type="submit" value="View Rates" >
   
 </form>
 
