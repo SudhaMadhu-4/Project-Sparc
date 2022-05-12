@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class StreamController {
 	
-	@RequestMapping("/login")
-	public String showStreamPage(ModelMap model) {
-		String viewName = "login";
+	@RequestMapping("/viewplans")
+	public String showPlans(ModelMap model) {
+		String viewName = "viewplans";
 		return viewName;
 	}
 
