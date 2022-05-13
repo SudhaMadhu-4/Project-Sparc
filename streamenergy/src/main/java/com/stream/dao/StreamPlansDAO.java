@@ -1,31 +1,33 @@
 package com.stream.dao;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Component;
 
+@Component
 public class StreamPlansDAO {
-	
-JdbcTemplate template ;
-	
+
+	@Autowired
+	JdbcTemplate template;
+
 	public void setTemplate(JdbcTemplate template) {
 		this.template = template;
 	}
-	public void create(StreamPlans streamPlans)
-	{
-	String sql="create table streamPlans(plan varchar2(30),term varchar2(30),features varchar2(30),price varchar2(30))";
-    template.execute(sql);
-    System.out.println("Table created Successfully");
-	}
-	
-	/*public void insert(StreamPlans streamPlans)
-	{
-		
-		String sql = "insert into streamPlans values (? , ? ,  ?, ?) " ;
-		
-		template.update(sql, streamPlans.getPlan() , streamPlans.getTerm() , streamPlans.getFeatures() ,streamPlans.getPrice());
-		
-		System.out.println("Inserted Successfully");
-	}*/
 
-	
+	public void create() {
+		String sql = "create table streamPlans(plan varchar(250),term varchar(250),features varchar(250),price varchar(30))";
+		template.execute(sql);
+		System.out.println("Table created Successfully");
+	}
+
+	public void insert(StreamPlans streamPlans) {
+
+		String sql = "insert into streamPlans values (? , ? , ?, ?) ";
+
+		template.update(sql, streamPlans.getPlan(), streamPlans.getTerm(), streamPlans.getFeatures(),
+				streamPlans.getPrice());
+
+		System.out.println("Inserted Successfully");
+	}
 
 }
