@@ -20,10 +20,15 @@ public class StreamController {
 		return viewName;
 	}
 	
-	@RequestMapping("/createtable")
-	public void createTable() {
+	@RequestMapping("/create")
+	public void createPlansTable() {
 		
 		service.createStreamPlans();
 	}
+	@RequestMapping("/insert")
+	public void insertPlans() {
+		service.insertStreamPlans(null);
+	}
+	
 
 }

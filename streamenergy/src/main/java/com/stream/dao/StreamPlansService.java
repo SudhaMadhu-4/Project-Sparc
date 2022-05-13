@@ -16,5 +16,8 @@ public class StreamPlansService {
 	public void createStreamPlans() {
 		streamPlansDAO.create();
 	}
+	public void insertStreamPlans(StreamPlans plans) {
+		streamPlansDAO.insert(plans);
+	}
 
 }
