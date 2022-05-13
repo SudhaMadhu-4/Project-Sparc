@@ -1,6 +1,10 @@
 package com.stream.dao;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class StreamPlans {
+	
 	String plan;
 	String term;
 	String features;
@@ -28,6 +32,13 @@ public class StreamPlans {
 		return price;
 	}
 	public void setPrice(String price) {
+		this.price = price;
+	}
+	public StreamPlans(String plan, String term, String features, String price) {
+		super();
+		this.plan = plan;
+		this.term = term;
+		this.features = features;
 		this.price = price;
 	}
 
