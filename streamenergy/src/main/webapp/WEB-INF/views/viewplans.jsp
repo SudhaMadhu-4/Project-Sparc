@@ -81,7 +81,7 @@ table, th, td {
 				<tr>
 					<td>Simple & Secure 12 Month Plan</td>
 					<td><h3 align="center">12</h3>
-						<h6 align="center" hidden="                                                               ">Months</h6></td>
+						<h6 align="center" hidden="">Months</h6></td>
 					<td align="center">All-inclusive</td>
 					<td><h4 align="center">19.9¢</h4></td>
 					<td><button type="button" name="select" class="button select">Select</button></td>

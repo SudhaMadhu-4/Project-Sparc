@@ -1,7 +1,10 @@
-package com.stream.dao;
+package com.stream.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+
+import com.stream.dao.StreamPlansDAO;
+import com.stream.dto.StreamPlans;
 
 @Component
 public class StreamPlansService {

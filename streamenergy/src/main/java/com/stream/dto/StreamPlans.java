@@ -1,4 +1,4 @@
-package com.stream.dao;
+package com.stream.dto;
 
 import org.springframework.stereotype.Component;
 
@@ -9,7 +9,6 @@ public class StreamPlans {
 	String term;
 	String features;
 	String price;
-	
 	public String getPlan() {
 		return plan;
 	}
@@ -34,6 +33,8 @@ public class StreamPlans {
 	public void setPrice(String price) {
 		this.price = price;
 	}
+	
+	
 	
 
 }
